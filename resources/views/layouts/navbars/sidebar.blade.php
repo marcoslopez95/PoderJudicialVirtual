@@ -7,7 +7,7 @@ Tip 2: you can also add an image using data-image tag
     <div class="sidebar-wrapper">
         <div class="logo">
             <a href="http://www.creative-tim.com" class="simple-text">
-                {{ __("PoderJudicialVirtual") }}
+                {{ __("Nombre Empresa") }}
             </a>
         </div>
         <ul class="nav">

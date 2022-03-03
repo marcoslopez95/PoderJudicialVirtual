@@ -1,4 +1,4 @@
-@extends('layouts.app', ['activePage' => 'register', 'title' => 'Registro / PoderJudicialVirtual'])
+@extends('layouts.app', ['activePage' => 'register', 'title' => 'Registro / Panadería'])
 
 @section('content')
     <div class="full-page register-page section-image" data-color="orange" data-image="{{ asset('light-bootstrap/img/bg5.jpg') }}">
