@@ -14,10 +14,8 @@
                             <div class="card-body ">
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="email" class="col-md-6 col-form-label">{{ __('E-Mail Address') }}</label>
-            
                                         <div class="col-md-14">
-                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email', 'admin@poderjudicialvirtual.com') }}" required autocomplete="email" autofocus>
+                                            <input id="email" type="hidden" class="form-control @error('email') is-invalid @enderror" name="email" value="@yield('tipo')" required autocomplete="email" autofocus>
             
                                             @error('email')
                                                 <span class="invalid-feedback" role="alert">
@@ -38,28 +36,11 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="form-group">
-                                            <div class="form-check">
-                                                <label class="form-check-label d-flex align-items-center">
-                                                    <input class="form-check-input" type="checkbox" name="remember"  id="remember">
-                                                    <span class="form-check-sign"></span>
-                                                    {{ __('Recuerdame') }}
-                                                </label>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-footer ml-auto mr-auto">
                                     <div class="container text-center" >
                                         <button type="submit" class="btn btn-warning btn-wd">{{ __('Login') }}</button>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <a class="btn btn-link"  style="color:#23CCEF" href="{{ route('password.request') }}">
-                                        {{ __('¿Olvidaste la contraseña?') }}
-                                        </a>
-                                        <a class="btn btn-link" style="color:#23CCEF" href="{{ route('register') }}">
-                                            {{ __('Registrese') }}
-                                        </a>
                                     </div>
                                     
                                 </div>

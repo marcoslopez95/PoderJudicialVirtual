@@ -30,27 +30,32 @@
         <link href="{{ asset('light-bootstrap/css/light-bootstrap-dashboard.css?v=2.0.0') }} " rel="stylesheet" />
         <!-- CSS Just for demo purpose, don't include it in your project -->
         <link href="{{ asset('light-bootstrap/css/demo.css') }}" rel="stylesheet" />
-    </head>
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        
 
-    <body>
-        <div class="wrapper @if (!auth()->check() || request()->route()->getName() == "") wrapper-full-page @endif">
-
+      </head>
+      
+      <body>
+        <div id="app">
+          
+          <div class="wrapper @if (!auth()->check() || request()->route()->getName() == "") wrapper-full-page @endif">
             @if (auth()->check() && request()->route()->getName() != "")
-                @include('layouts.navbars.sidebar')
-                @include('pages/sidebarstyle')
+            @include('layouts.navbars.sidebar')
+            @include('pages/sidebarstyle')
             @endif
-
+            
             <div class="@if (auth()->check() && request()->route()->getName() != "") main-panel @endif">
-                @include('layouts.navbars.navbar')
-                @yield('content')
-                @include('layouts.footer.nav')
+              @include('layouts.navbars.navbar')
+              @yield('content')
+              @include('layouts.footer.nav')
             </div>
-
+            
+          </div>
+          
         </div>
-       
-
-
-    </body>
+      </body>
+    <script src="{{ mix('/js/app.js') }}"></script>
+    
         <!--   Core JS Files   -->
     <script src="{{ asset('light-bootstrap/js/core/jquery.3.2.1.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('light-bootstrap/js/core/popper.min.js') }}" type="text/javascript"></script>
@@ -60,7 +65,7 @@
     <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
     <script src="{{ asset('light-bootstrap/js/plugins/bootstrap-switch.js') }}"></script>
     <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    {{-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> --}}
     <!--  Chartist Plugin  -->
     <script src="{{ asset('light-bootstrap/js/plugins/chartist.min.js') }}"></script>
     <!--  Notifications Plugin    -->

@@ -31,20 +31,20 @@
                                 <div class="row">
                                     <div class="mb-4 col-sm-4">
                                         <label for="nombre" class="form-label">Nombre del Producto:</label>
-                                        <input type="text" class="form-control" id="nombre" name='nombre'>
+                                        <input type="text" class="form-control" id="nombre" name='nombre' placeholder="Pan">
                                     </div>
                                     <div class="mb-4 col-sm-4">
                                         <label for="precio_base" class="form-label">Precio Base:</label>
-                                        <input type="number" class="form-control" id="precio_base" name='precio_base' step="0.01">
+                                        <input type="number" class="form-control" id="precio_base" name='precio_base' step="0.01" placeholder="1500">
                                     </div>
                                     <div class="mb-4 col-sm-4">
-                                        <label for="impuesto" class="form-label">impuesto (%):</label>
-                                        <input type="number" class="form-control" id="impuesto" name='impuesto' min="0" max="100" step="0.01" placeholder="10%">
+                                        <label for="impuesto" class="form-label">Precio Venta:</label>
+                                        <input type="number" class="form-control" id="precio_venta" name='precio_venta' step="0.01" placeholder="3500">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="mb-4 col-sm-4">
-                                        <label for="precio_total" class="form-label">Precio Total:</label>
+                                        <label for="precio_total" class="form-label">Ganancia x unidad:</label>
                                         <input type="number" class="form-control" id="precio_total" name='precio_total' disabled>
                                     </div>
                                     <div class="mb col-sm">
@@ -67,7 +67,7 @@
 	$("#precio_base").change(function () {
         if(!(isNaN($('#impuesto').val()))){
             /* let impuesto = parseInt($('#impuesto').val()); */
-            var impuesto = parseInt(document.getElementById('impuesto').value);
+            var impuesto = parseInt(document.getElementById('precio_venta').value);
             /* let precio_base = parseInt($('#precio_base').val()); */
             var precio_base = parseInt(document.getElementById('precio_base').value);
             

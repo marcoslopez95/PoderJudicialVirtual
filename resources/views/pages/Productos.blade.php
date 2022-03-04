@@ -5,10 +5,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card strpied-tabled-with-hover">
-                        <div class="card-header ">
-                            <h4 class="card-title">Productos Registrados</h4>
-                            <a href="{{route('crear-producto')}}" class="btn btn-primary ">
+                    <div class="card strpied-tabled-with-hover container">
+                        <div class="card-header justify-content-between row">
+                            <h4 class="card-title col-4 my-auto">Productos Registrados</h4>
+                            <a href="{{route('crear-producto')}}" class="btn btn-primary col-2">
                                 Crear Producto
                             </a>
                         </div>
@@ -18,8 +18,8 @@
                                     <th>ID</th>
                                     <th>Nombre</th>
                                     <th>Precio Base</th>
-                                    <th>Impuesto (%)</th>
-                                    <th>Precio Total</th>
+                                    <th>Precio Venta</th>
+                                    <th>Stock</th>
                                     <th>Acciones</th>
                                 </thead>
                                 <tbody>

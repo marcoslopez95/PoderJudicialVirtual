@@ -18,17 +18,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-	
-    return view('welcome');
-});
 
 Auth::routes();
+
+Route::group(['middleware' => 'log'], function () {
+	Route::get('/', function () {
+		return view('welcome');
+	})->name('welcome');
+	Route::get('login_admin', function () {
+		return view('auth.loginAdmin');
+	})->name('login-admin');
+	Route::get('login_user', function () {
+		return view('auth.loginUser');
+	})->name('login-user');
+});
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Auth::routes();
 
-Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('dashboard');
 
 Route::group(['middleware' => 'auth'], function () {
 	Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);

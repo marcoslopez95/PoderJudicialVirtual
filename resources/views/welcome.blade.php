@@ -7,6 +7,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 col-md-8">
                         <h1 class="text-white text-center">Bienvenido a la web de {{ __('Nombre Empresa') }}</h1>
+                        <login-component></login-component>
                     </div>
                 </div>
             </div>
