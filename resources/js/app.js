@@ -22,6 +22,9 @@ window.Vue = require('vue').default;
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('footer-component', require('./components/FooterComponent.vue').default);
 Vue.component('login-component', require('./components/Login/LoginComponent.vue').default);
+Vue.component('update-product', require('./components/Productos/UpdateProduct.vue').default);
+Vue.component('store-product', require('./components/Productos/StoreProduct.vue').default);
+Vue.component('btn-product', require('./components/Productos/BtnProduct.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

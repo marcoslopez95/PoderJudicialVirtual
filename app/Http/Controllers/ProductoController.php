@@ -28,7 +28,8 @@ class ProductoController extends Controller
         $request->validate([
             'nombre' => 'required|alpha',
             'precio_base' => 'required|numeric|min:0.01|between:0,1000000000',
-            'impuesto' => 'required|numeric|min:0.01|between:0,100',
+            'precio_venta' => 'required|numeric|min:0.01|between:0,1000000000',
+            //'impuesto' => 'required|numeric|min:0.01|between:0,100',
         ]);
 
         $bool = false;
@@ -52,7 +53,8 @@ class ProductoController extends Controller
         $request->validate([
             'nombre' => 'required|alpha',
             'precio_base' => 'required|numeric|min:0.01|between:0,1000000000',
-            'impuesto' => 'required|numeric|min:0.01|between:0,100',
+            'precio_venta' => 'required|numeric|min:0.01|between:0,1000000000',
+            //'impuesto' => 'required|numeric|min:0.01|between:0,100',
         ]);
         $bool = false;
         try{

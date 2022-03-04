@@ -20,12 +20,18 @@ class ProductoService
     }
 
     public function Guardar($request){
+        if(!array_key_exists('impuesto',$request->all())){
+            $request['impuesto'] = 0;
+        }
         $request['precio_total'] = $request->precio_base * (1 + ($request->impuesto/100));
         //return $request;
         return $this->repository->Guardar($request);
     }
 
     public function editar($request, $producto){
+        if(!$request->has('impuesto')){
+            $request['impuesto'] = 0;
+        }
         $request['precio_total'] = $request->precio_base * (1 + ($request->impuesto/100));
         return $this->repository->editar($request, $producto);
     }

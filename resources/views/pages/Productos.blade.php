@@ -28,11 +28,10 @@
                                         <td>{{$producto->id}}</td>
                                         <td>{{$producto->nombre}}</td>
                                         <td>{{$producto->precio_base}}</td>
-                                        <td>{{$producto->impuesto}}</td>
-                                        <td>{{$producto->precio_total}}</td>
+                                        <td>{{$producto->precio_venta}}</td>
+                                        <td>{{$producto->stock}}</td>
                                         <td>
-                                            <a title='Editar' href="{{route('ver-producto',$producto->id)}}"><i class="nc-icon nc-settings-90"></i></a>
-                                            <a title='Eliminar' href="{{route('eliminar-producto',$producto->id)}}"><i class="ml-2 nc-icon nc-simple-delete"></i></a>
+                                            <btn-product :id={{$producto->id}} />
                                         </td>
                                     </tr>
                                     @endforeach

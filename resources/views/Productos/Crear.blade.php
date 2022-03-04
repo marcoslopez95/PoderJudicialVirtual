@@ -28,30 +28,7 @@
                             @endif
                             <form class="container" action="{{route('guardar-producto')}}" method="POST" id="producto">
                                 @csrf
-                                <div class="row">
-                                    <div class="mb-4 col-sm-4">
-                                        <label for="nombre" class="form-label">Nombre del Producto:</label>
-                                        <input type="text" class="form-control" id="nombre" name='nombre' placeholder="Pan">
-                                    </div>
-                                    <div class="mb-4 col-sm-4">
-                                        <label for="precio_base" class="form-label">Precio Base:</label>
-                                        <input type="number" class="form-control" id="precio_base" name='precio_base' step="0.01" placeholder="1500">
-                                    </div>
-                                    <div class="mb-4 col-sm-4">
-                                        <label for="impuesto" class="form-label">Precio Venta:</label>
-                                        <input type="number" class="form-control" id="precio_venta" name='precio_venta' step="0.01" placeholder="3500">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="mb-4 col-sm-4">
-                                        <label for="precio_total" class="form-label">Ganancia x unidad:</label>
-                                        <input type="number" class="form-control" id="precio_total" name='precio_total' disabled>
-                                    </div>
-                                    <div class="mb col-sm">
-                                        <input type="submit" class="btn btn-primary" value='Guardar' />
-                                    </div>
-                                    
-                                </div>
+                                <store-product  />
                               </form>
                         </div>
                     </div>
@@ -59,33 +36,6 @@
             </div>
         </div>
     </div>
-<script src='{{ asset('/js/jquery-3.js') }}'></script>
-<script>
 
-    $(document).ready(function(){
-        var total = 0;
-	$("#precio_base").change(function () {
-        if(!(isNaN($('#impuesto').val()))){
-            /* let impuesto = parseInt($('#impuesto').val()); */
-            var impuesto = parseInt(document.getElementById('precio_venta').value);
-            /* let precio_base = parseInt($('#precio_base').val()); */
-            var precio_base = parseInt(document.getElementById('precio_base').value);
-            
-            $('#precio_total').val(precio_base * (1 + (impuesto/100)))
-        }
-//        $('#precio_total') = $('#precio_base').val() * ( 1 + $('#impuesto').val())
-	});
-    $("#impuesto").change(function () {
-        if(!(isNaN($('#precio_base').val()))){
-            /* let impuesto = parseInt($('#impuesto').val()); */
-            var impuesto = parseInt(document.getElementById('impuesto').value);
-            /* let precio_base = parseInt($('#precio_base').val()); */
-            var precio_base = parseInt(document.getElementById('precio_base').value);
-            
 
-            $('#precio_total').val(precio_base * (1 + (impuesto/100)))
-        }
-	});
-});
-</script>
 @endsection

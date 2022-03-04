@@ -14,7 +14,9 @@ class Producto extends Model
         'nombre',
         'precio_base',
         'impuesto',
-        'precio_total'
+        'precio_total',
+        'precio_venta',
+        'ganancia'
     ];
 
     /**
