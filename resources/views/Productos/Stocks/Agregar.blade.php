@@ -8,9 +8,9 @@
                     <div class="card strpied-tabled-with-hover">
                         <div class="card-header ">
                             <div class="container row">
-                                <h4 class="card-title col">Crear Producto</h4>
+                                <h4 class="card-title col">Agregar Stock</h4>
                                 <div class="col-1 col-sm-1">
-                                    <a href="{{route('page.index', 'Productos')}}" class="btn btn-primary">
+                                    <a href="{{route('page.index', 'Productos')}}" class="btn btn-info">
                                         Regresar
                                     </a>
                                 </div>
@@ -28,7 +28,7 @@
                             @endif
                             <form class="container" action="{{route('guardar-producto')}}" method="POST" id="producto">
                                 @csrf
-                                <store-product  />
+                                <agregar-stock :producto="{{$producto}}"  />
                               </form>
                         </div>
                     </div>

@@ -3,7 +3,9 @@
 namespace App\Http\Services;
 
 use App\Http\Repository\ProductoRepository;
+use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class ProductoService
 {
@@ -38,5 +40,14 @@ class ProductoService
 
     public function eliminar($producto){
         return $this->repository->eliminar($producto);
+    }
+
+    public function agregarQuitarStock($id, $request){
+        try {
+            return $this->repository->agregarQuitarStock($id,$request->cantidad,$request->tipo);
+        } catch (Exception $e) {
+            Log::info($e->getMessage());
+            return null;
+        }
     }
 }

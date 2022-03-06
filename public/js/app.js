@@ -5356,10 +5356,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/BtnProduct.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/BtnProduct.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/AgregarStock.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/AgregarStock.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5377,11 +5377,98 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'AgregarStock',
   props: {
+    nombre: String,
+    stock: Number,
     id: Number
   },
-  data: function data() {}
+  mounted: function mounted() {
+    console.log(this.nombre);
+  },
+  data: function data() {
+    return {
+      tipo: null,
+      cantidad: null
+    };
+  },
+  destroyed: function destroyed() {
+    this.tipo = null;
+    this.cantidad = null;
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/BtnProduct.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/BtnProduct.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _AgregarStock_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AgregarStock.vue */ "./resources/js/components/Productos/AgregarStock.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    AgregarStockVue: _AgregarStock_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  props: {
+    producto: Object
+  }
 });
 
 /***/ }),
@@ -5536,6 +5623,7 @@ Vue.component('login-component', (__webpack_require__(/*! ./components/Login/Log
 Vue.component('update-product', (__webpack_require__(/*! ./components/Productos/UpdateProduct.vue */ "./resources/js/components/Productos/UpdateProduct.vue")["default"]));
 Vue.component('store-product', (__webpack_require__(/*! ./components/Productos/StoreProduct.vue */ "./resources/js/components/Productos/StoreProduct.vue")["default"]));
 Vue.component('btn-product', (__webpack_require__(/*! ./components/Productos/BtnProduct.vue */ "./resources/js/components/Productos/BtnProduct.vue")["default"]));
+Vue.component('agregar-stock', (__webpack_require__(/*! ./components/Productos/AgregarStock.vue */ "./resources/js/components/Productos/AgregarStock.vue")["default"]));
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -28147,6 +28235,45 @@ component.options.__file = "resources/js/components/Login/LoginComponent.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Productos/AgregarStock.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/Productos/AgregarStock.vue ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _AgregarStock_vue_vue_type_template_id_2da33184___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AgregarStock.vue?vue&type=template&id=2da33184& */ "./resources/js/components/Productos/AgregarStock.vue?vue&type=template&id=2da33184&");
+/* harmony import */ var _AgregarStock_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AgregarStock.vue?vue&type=script&lang=js& */ "./resources/js/components/Productos/AgregarStock.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AgregarStock_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AgregarStock_vue_vue_type_template_id_2da33184___WEBPACK_IMPORTED_MODULE_0__.render,
+  _AgregarStock_vue_vue_type_template_id_2da33184___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Productos/AgregarStock.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Productos/BtnProduct.vue":
 /*!**********************************************************!*\
   !*** ./resources/js/components/Productos/BtnProduct.vue ***!
@@ -28312,6 +28439,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Productos/AgregarStock.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/Productos/AgregarStock.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AgregarStock_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AgregarStock.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/AgregarStock.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AgregarStock_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Productos/BtnProduct.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************!*\
   !*** ./resources/js/components/Productos/BtnProduct.vue?vue&type=script&lang=js& ***!
@@ -28407,6 +28550,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_template_id_1d786705___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LoginComponent_vue_vue_type_template_id_1d786705___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./LoginComponent.vue?vue&type=template&id=1d786705& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Login/LoginComponent.vue?vue&type=template&id=1d786705&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Productos/AgregarStock.vue?vue&type=template&id=2da33184&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/Productos/AgregarStock.vue?vue&type=template&id=2da33184& ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AgregarStock_vue_vue_type_template_id_2da33184___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AgregarStock_vue_vue_type_template_id_2da33184___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AgregarStock_vue_vue_type_template_id_2da33184___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AgregarStock.vue?vue&type=template&id=2da33184& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/AgregarStock.vue?vue&type=template&id=2da33184&");
 
 
 /***/ }),
@@ -28597,6 +28757,214 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/AgregarStock.vue?vue&type=template&id=2da33184&":
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/AgregarStock.vue?vue&type=template&id=2da33184& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "modal-dialog" }, [
+    _c("div", { staticClass: "modal-content" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "modal-body" }, [
+        _c(
+          "form",
+          {
+            attrs: {
+              action: "/Producto/agregar_quitar_stock/" + _vm.id,
+              method: "post",
+            },
+          },
+          [
+            _vm._t("default"),
+            _vm._v(" "),
+            _c("span", [
+              _c("b", [_vm._v("Producto:")]),
+              _vm._v(" " + _vm._s(_vm.nombre) + " - "),
+              _c("b", [_vm._v("En Almacen:")]),
+              _vm._v(" " + _vm._s(_vm.stock)),
+            ]),
+            _vm._v(" "),
+            _c("label", { staticClass: "form-label", attrs: { for: "tipo" } }, [
+              _vm._v("¿Qué accion desea realizar?"),
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-check form-check-inline" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.tipo,
+                    expression: "tipo",
+                  },
+                ],
+                staticClass: "form-check-input",
+                attrs: {
+                  type: "radio",
+                  name: "tipo",
+                  id: "agregar",
+                  value: "agregar",
+                },
+                domProps: { checked: _vm._q(_vm.tipo, "agregar") },
+                on: {
+                  change: function ($event) {
+                    _vm.tipo = "agregar"
+                  },
+                },
+              }),
+              _vm._v(" "),
+              _c(
+                "label",
+                {
+                  staticClass: "form-check-label pl-0",
+                  attrs: { for: "agregar" },
+                },
+                [_vm._v("Agregar")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form-check form-check-inline" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.tipo,
+                    expression: "tipo",
+                  },
+                ],
+                staticClass: "form-check-input",
+                attrs: {
+                  type: "radio",
+                  name: "tipo",
+                  id: "quitar",
+                  value: "quitar",
+                  disabled: _vm.stock == 0,
+                },
+                domProps: { checked: _vm._q(_vm.tipo, "quitar") },
+                on: {
+                  change: function ($event) {
+                    _vm.tipo = "quitar"
+                  },
+                },
+              }),
+              _vm._v(" "),
+              _c(
+                "label",
+                {
+                  staticClass: "form-check-label pl-0",
+                  attrs: { for: "quitar" },
+                },
+                [_vm._v("Quitar")]
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "input-group" }, [
+              _c(
+                "span",
+                { staticClass: "input-group-text", attrs: { for: "cantidad" } },
+                [_vm._v(" Cantidad: ")]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.cantidad,
+                    expression: "cantidad",
+                  },
+                ],
+                staticClass: "form-control",
+                attrs: {
+                  type: "number",
+                  name: "cantidad",
+                  step: "1",
+                  min: "1",
+                  placeholder: "10",
+                },
+                domProps: { value: _vm.cantidad },
+                on: {
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.cantidad = $event.target.value
+                  },
+                },
+              }),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "modal-footer" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-secondary",
+                  attrs: { type: "button", "data-bs-dismiss": "modal" },
+                },
+                [_vm._v("Cerrar")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-primary",
+                  class: { disabled: !(this.cantidad && this.tipo) },
+                  attrs: { type: "submit" },
+                },
+                [_vm._v("Guardar")]
+              ),
+            ]),
+          ],
+          2
+        ),
+      ]),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-header" }, [
+      _c(
+        "h5",
+        { staticClass: "modal-title", attrs: { id: "exampleModalLabel" } },
+        [_vm._v("Agregar / Quitar Productos")]
+      ),
+      _vm._v(" "),
+      _c("button", {
+        staticClass: "btn-close",
+        attrs: {
+          type: "button",
+          "data-bs-dismiss": "modal",
+          "aria-label": "Close",
+        },
+      }),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/BtnProduct.vue?vue&type=template&id=200bde0c&":
 /*!********************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Productos/BtnProduct.vue?vue&type=template&id=200bde0c& ***!
@@ -28613,26 +28981,67 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("a", { attrs: { title: "Editar", href: "/Producto/ver/" + _vm.id } }, [
-      _c("i", { staticClass: "nc-icon nc-settings-90" }),
-    ]),
-    _vm._v(" "),
+  return _c("div", { staticClass: "container-fluid justify-content-between" }, [
     _c(
       "a",
-      { attrs: { title: "Eliminar", href: "/Producto/eliminar/" + _vm.id } },
-      [_c("i", { staticClass: "ml-2 nc-icon nc-simple-delete" })]
+      {
+        staticClass: "btn btn-primary  text-white",
+        attrs: { title: "Editar", href: "/Producto/ver/" + _vm.producto.id },
+      },
+      [_c("i", { staticClass: "nc-icon nc-settings-90" })]
     ),
     _vm._v(" "),
     _c(
       "a",
       {
+        staticClass: "btn btn-danger   text-white",
         attrs: {
-          title: "Agregar Stock",
-          href: "/Producto/agregar_stock/" + _vm.id,
+          title: "Eliminar",
+          href: "/Producto/eliminar/" + _vm.producto.id,
         },
       },
-      [_c("i", { staticClass: "ml-2 nc-icon nc-simple-agg" })]
+      [_c("i", { staticClass: "nc-icon nc-simple-remove" })]
+    ),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-primary",
+        attrs: {
+          type: "button",
+          "data-bs-toggle": "modal",
+          "data-bs-target": "#Stock" + _vm.producto.id,
+        },
+      },
+      [_vm._v("\n  Stock\n")]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: {
+          id: "Stock" + _vm.producto.id,
+          tabindex: "-1",
+          "aria-labelledby": "exampleModalLabel",
+          "aria-hidden": "true",
+        },
+      },
+      [
+        _c(
+          "AgregarStockVue",
+          {
+            attrs: {
+              id: _vm.producto.id,
+              nombre: _vm.producto.nombre,
+              stock: _vm.producto.stock,
+            },
+          },
+          [_vm._t("default")],
+          2
+        ),
+      ],
+      1
     ),
   ])
 }
@@ -28733,7 +29142,7 @@ var render = function () {
       ]),
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "row py-auto align-items-end" }, [
       _c("div", { staticClass: "mb-4 col-sm-4" }, [
         _c(
           "label",
@@ -28782,9 +29191,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mb col-sm" }, [
+    return _c("div", { staticClass: " text-end justify-content-end col-sm" }, [
       _c("input", {
-        staticClass: "btn btn-primary",
+        staticClass: "btn btn-primary my-0",
         attrs: { type: "submit", value: "Guardar" },
       }),
     ])

@@ -13,7 +13,7 @@
                             </a>
                         </div>
                         <div class="card-body table-full-width table-responsive">
-                            <table class="table table-hover">
+                            <table class="table table-hover w-100">
                                 <thead>
                                     <th>ID</th>
                                     <th>Nombre</th>
@@ -30,8 +30,12 @@
                                         <td>{{$producto->precio_base}}</td>
                                         <td>{{$producto->precio_venta}}</td>
                                         <td>{{$producto->stock}}</td>
-                                        <td>
-                                            <btn-product :id={{$producto->id}} />
+                                        <td  class="p-0 w-100">
+                                            <btn-product 
+
+                                                :producto={{$producto}}>
+                                                @csrf
+                                            </btn-product>
                                         </td>
                                     </tr>
                                     @endforeach

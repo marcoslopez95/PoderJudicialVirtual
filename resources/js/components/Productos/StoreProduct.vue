@@ -14,13 +14,13 @@
         <input type="number" class="form-control" id="precio_venta" name='precio_venta' v-model="venta" min="0,1"  placeholder="Ingrese el precio de venta">
     </div>
 </div>
-<div class="row">
+<div class="row py-auto align-items-end">
     <div class="mb-4 col-sm-4">
         <label for="precio_total" class="form-label">Ganancia x Unidad:</label>
         <input type="number" class="form-control" id="precio_total" name='ganancia' disabled :value="ganancia">
     </div>
-    <div class="mb col-sm">
-        <input type="submit" class="btn btn-primary" value='Guardar' />
+    <div class=" text-end justify-content-end col-sm">
+        <input type="submit" class="btn btn-primary my-0" value='Guardar' />
     </div>
     
 </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CambiarStock;
 use App\Http\Services\ProductoService;
 use App\Models\Producto;
 use Exception;
@@ -89,5 +90,16 @@ class ProductoController extends Controller
         return Producto::when($request->nombre,function($query,$nombre){
             return $query->where('nombre','like',"%$nombre%");
         })->get();
+    }
+
+    public function agregarQuitarStock($producto, CambiarStock $request){
+
+        $bool = $this->service->agregarQuitarStock($producto,$request);
+
+        if($bool){
+            
+            return redirect()->back();
+            
+        }
     }
 }

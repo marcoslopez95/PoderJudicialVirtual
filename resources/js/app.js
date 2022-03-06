@@ -25,6 +25,8 @@ Vue.component('login-component', require('./components/Login/LoginComponent.vue'
 Vue.component('update-product', require('./components/Productos/UpdateProduct.vue').default);
 Vue.component('store-product', require('./components/Productos/StoreProduct.vue').default);
 Vue.component('btn-product', require('./components/Productos/BtnProduct.vue').default);
+Vue.component('agregar-stock', require('./components/Productos/AgregarStock.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

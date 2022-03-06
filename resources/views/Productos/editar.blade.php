@@ -10,7 +10,7 @@
                             <div class="container row">
                                 <h4 class="card-title col">Crear Producto</h4>
                                 <div class="col-1 col-sm-1">
-                                    <a href="{{route('page.index', 'Productos')}}" class="btn btn-info">
+                                    <a href="{{route('page.index', 'Productos')}}" class="btn btn-primary">
                                         Regresar
                                     </a>
                                 </div>

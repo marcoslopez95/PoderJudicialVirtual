@@ -55,6 +55,7 @@ Route::group(['middleware' => 'auth'], function () {
 			Route::put('editar/{producto}', 'editar')->name('editar-producto');
 			Route::get('eliminar/{producto}', 'eliminar')->name('eliminar-producto');
 			Route::get('buscar', 'buscar');
+			Route::post('agregar_quitar_stock/{producto}', 'agregarQuitarStock')->name('agregar-quitar-stock-producto');
 		 });
 	});
 

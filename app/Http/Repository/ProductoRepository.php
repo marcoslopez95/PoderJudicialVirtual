@@ -28,4 +28,16 @@ class ProductoRepository
     public function eliminar($producto){
         return $producto->delete();
     }
+
+    public function agregarQuitarStock($producto, $cantidad, $tipo){
+        $producto = Producto::find($producto);
+        if($tipo == 'quitar'){
+            $producto->stock -= $cantidad;
+        }
+        if($tipo == 'agregar'){
+            $producto->stock += $cantidad;
+        }
+        $producto->save();
+        return $producto;
+    }
 }
